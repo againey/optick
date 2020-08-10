@@ -83,6 +83,10 @@ namespace Profiler.ViewModels
                     frameStats = new FunctionStats(group, desc);
                     frameStats.Load(Origin);
                 }
+                else
+                {
+                    frameStats = null;
+                }
 
                 OnLoaded(frameStats);
             });

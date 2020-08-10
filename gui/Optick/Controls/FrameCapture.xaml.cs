@@ -231,8 +231,11 @@ namespace Profiler.Controls
 			SysCallsSamplingVM.Load(null, null);
 
 			FrameInfoControl.DataContext = null;
-			SampleInfoControl.DataContext = null; 
+			FrameInfoControl.SummaryTable.DataContext = null;
+			SampleInfoControl.DataContext = null;
+			SampleInfoControl.SummaryTable.DataContext = null;
 			SysCallInfoControl.DataContext = null;
+			SysCallInfoControl.SummaryTable.DataContext = null;
 
 			//SamplingTreeControl.SetDescription(null, null);
 

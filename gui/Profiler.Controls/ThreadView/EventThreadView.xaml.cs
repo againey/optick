@@ -421,6 +421,7 @@ namespace Profiler.Controls
 
 		void InitThreadList(FrameGroup group)
 		{
+			coreRows.Clear();
 			List<ThreadRow> rows = new List<ThreadRow>();
 
 			if (group != null)
